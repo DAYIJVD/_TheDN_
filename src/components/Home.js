@@ -9,7 +9,7 @@ const Home = () => {
     const [Load,setLoad]=useState("");
     setTimeout(()=>{
       setLoad("!Load")
-    },4000)
+    },800)
       if(!Load.length){
         return(<Loading/>);
       }else{

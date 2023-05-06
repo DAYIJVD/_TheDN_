@@ -8,7 +8,10 @@ import pause from "../assets/pause.svg"
 const Navbar = () => {
     let Music=document.getElementsByTagName("audio");
     const [playing,setplaying]=useState(false)
-    useEffect(()=>{ 
+    useEffect(()=>{
+        if(Music[0].played===true){
+            setplaying(true)
+        }
      Music[0].loop=true
      },[Music])
     const changeplay=()=>{

@@ -1,0 +1,128 @@
+
+/* styles */
+.Asli{
+  background: rgb(13,27,49);
+  width: 100%;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  z-index: 10;
+  background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+}
+.conteiner{
+    color:#ffffff;
+    background: rgb(74,131,226);
+    background: linear-gradient(0deg, rgba(74,131,226,1) 0%, rgba(32,95,196,1) 100%);
+    font-weight: 900;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 40px;
+    margin: 0rem 5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.conteiner h2{
+  cursor:help;
+  transition: all 0.1s;
+}
+.conteiner h2:hover{
+ animation: color 0.6s forwards;
+}
+@keyframes color{
+  0%{
+    color: #ffffff;
+  }
+  50%{
+      color: rgb(0, 42, 96);
+  }
+  100%{
+      color: #ffffff;
+  }
+}
+.list{
+    display: flex;
+   list-style: none;
+   align-items: center;
+
+}
+.list li{
+padding:0;
+font-style: none;
+cursor: pointer;
+}
+.list li img{
+  width: 40px;
+  position: relative;
+  top: 3px;
+  left: 35px;
+}
+
+.list li a{
+  color:  rgb(255, 255, 255);
+  padding:0 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.list li a:hover{
+  color: rgba(255, 255, 255, 0.516);
+}
+@media (max-width:850px) {
+  
+
+  .conteiner{
+    font-size: 7px;
+      color:#ffffff;
+      background: rgb(74,131,226);
+      background: linear-gradient(0deg, rgba(74,131,226,1) 0%, rgba(32,95,196,1) 100%);
+      font-weight: 900;
+      padding: 1.3rem;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      border-radius: 40px;
+      margin: 0rem 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .list{
+      display: flex;
+     list-style: none;
+     align-items: center;
+  
+  }
+  .list li{
+  padding:0;
+  font-style: none;
+  cursor: pointer;
+  }
+  .list li img{
+    width: 20px;
+    position: relative;
+    left: 7px;
+  }
+  
+  .list li a{
+    color:  rgb(255, 255, 255);
+    padding:0 .4rem;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .list li a:hover{
+    color: rgba(255, 255, 255, 0.516);
+  }
+}
+@media (max-width:400px) {
+  .Asli{
+    background: rgb(13,27,49);
+    width: 400px;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+    z-index: 10;
+    background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+  }
+ 
+}

@@ -1,0 +1,253 @@
+.conteiner{
+    display: flex;
+    height: 100vh;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem 12.6rem; 
+    background: rgb(13,27,49);
+    background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+}
+.content{
+    width: 100%;
+    margin: 0rem 4rem;
+    margin-top:0rem ;
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    opacity: 0;
+    animation: show 2s forwards ;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.content img{
+    width: 60px;
+}
+.content .left img{
+    width: 60px;
+    position: relative;
+    top:0;
+    transition: all .4s;
+}
+.content .right img{
+    width: 60px;
+    position: relative;
+    top:0;
+    transition: all .4s;
+}
+.content .left img:hover{
+    width: 65px;
+    top:2px;
+}
+.content .right img:hover{
+    width: 65px;
+    top:2px;
+}
+.content ul{
+    list-style: none;
+}
+.content ul li{
+    margin: 2.4rem 0.1rem;
+}
+ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+.content span{
+    margin: 0 1rem;
+    position: relative;
+    bottom: 0;
+    transition: all 0.4s;
+}
+.content span:hover{
+    color: rgb(2, 2, 79);
+    bottom: 2px;
+}
+.code{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.code img{
+    z-index: 4;
+    margin: 0.6rem;
+
+}
+.code .road{
+    width:350px;
+    position: absolute;
+    bottom: 0rem;
+    right: -9rem;
+    z-index: 1;
+}
+.code .CoDE{
+    position: relative;
+    left: 2.7rem;
+    bottom:2rem;
+}
+.code .HTML{
+    position: relative;
+    right: 3rem;
+    bottom:2rem;
+}
+
+.code .css{
+    position: relative;
+    right: 1rem;
+    
+}
+.code .js{
+    position: relative;
+    left: 3.9rem;
+}
+.code .react{
+    position: relative;
+    top: 2rem;
+    right:1.6rem;
+}
+.jvdnrz{
+    position: relative;
+    right: 2.7rem;
+}
+.web{
+    position: relative;
+    left: 2.7rem;
+}
+@media (max-width:850px) {
+    .conteiner{
+        display: flex;
+        height: 100vh;
+        color: #ffffff;
+        justify-content: space-between;
+        align-items: center;
+        padding:0rem 2rem; 
+        background: rgb(13,27,49);
+        background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+    }
+    .content{
+        width: 100%;
+        margin: 0rem 0rem;
+        margin-top:1rem ;
+        position: relative;
+        bottom: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: large;
+        opacity: 0;
+        animation: show 2s forwards ;
+        font-size: 10px;
+    }
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .content img{
+        width: 20px;
+    }
+    .content .left img{
+        width: 40px;
+        position: relative;
+        top:0;
+        transition: all .4s;
+    }
+    .content .right img{
+        width: 40px;
+        position: relative;
+        top:0;
+        transition: all .4s;
+    }
+    .content .left img:hover{
+        width: 45px;
+        top:2px;
+    }
+    .content .right img:hover{
+        width: 45px;
+        top:2px;
+    }
+    .content ul{
+        list-style: none;
+    }
+    .content ul li{
+        margin: 2.4rem 0.1rem;
+    }
+    ul li a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .content span{
+        margin: 0 1rem;
+        position: relative;
+        bottom: 0;
+        transition: all 0.4s;
+    }
+    .content span:hover{
+        color: rgb(2, 2, 79);
+        bottom: 2px;
+    }
+    .code{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .code img{
+        z-index: 4;
+        margin: 0.6rem;
+    
+    }
+    .code .road{
+        width:150px;
+        position: absolute;
+        bottom: 0rem;
+        right:-80px;
+        z-index: 1;
+    }
+    .code .CoDE{
+        position: relative;
+        left: 1rem;
+        bottom:-0.4rem;
+    }
+    .code .HTML{
+        position: relative;
+        right: 1rem;
+        bottom:-1rem;
+    }
+    
+    .code .css{
+        position: relative;
+        right: -0.6rem;
+        top: 0.4rem;
+    }
+    .code .js{
+        position: relative;
+        left: 2.5rem;
+    }
+    
+    .jvdnrz{
+        position: relative;
+        right: 2.7rem;
+    }
+    .web{
+        position: relative;
+        left: 2.7rem;
+    }
+    
+}

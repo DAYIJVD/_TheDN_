@@ -1,0 +1,155 @@
+
+.conteiner{
+    display: flex;
+    height: 100vh;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem 12.6rem; 
+    z-index: 2;
+    background: rgb(13,27,49);
+    background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+}
+.conteiner img{
+    opacity: 0;
+    animation: show 2s forwards ;
+    width: 450px;
+    border-radius: 50%;
+    filter: brightness(0.6);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+.textHome{
+    opacity: 0;
+    animation: show 2s forwards;
+
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.textHome h1{
+    font-weight: 900;
+    font-size: 38px;
+}
+
+.textHome h2{
+   color: rgb(255, 255, 255);
+   
+
+}
+.textHome h2 span{
+    color: rgb(0, 110, 255);
+ }
+
+.textHome button{
+    color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.9rem;
+    outline: none;
+    background-color:#0D1B31;
+    border: 1px solid #ffffff;
+    transition: all 0.4s;
+}
+.textHome button:hover{
+    background-color:#ffffff1f;
+}
+.textHome button a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+@media (max-width:850px) {
+    .conteiner{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        color: #ffffff;
+        justify-content: flex-end;
+        align-items: center;
+        padding:3rem 12.6rem; 
+        z-index: 2;
+        background: rgb(13,27,49);
+        background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+    }
+    .conteiner img{
+        opacity: 0;
+        animation: show 2s forwards ;
+        width: 300px;
+        border-radius: 50%;
+        filter: brightness(0.6);
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    
+    }
+    .textHome{
+        text-align: center;
+        width: 300px;
+        font-size: 25px;
+        padding: 2rem 0;
+        opacity: 0;
+        animation: show  2s forwards;
+    
+    }
+    
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .textHome h1{
+        animation: color .9s forwards;
+        animation-delay: 1.2s;
+        font-weight: 900;
+        font-size: 38px;
+    }
+    @keyframes color{
+        0%{
+          color: #ffffff;
+        }
+        50%{
+            color: rgb(0, 110, 255);
+        }
+        100%{
+            color: #ffffff;
+        }
+    }
+    .textHome h2{
+        font-size: 15px;
+
+       color: rgb(255, 255, 255);
+    }
+    .textHome h2 span{
+        color: rgb(0, 110, 255);
+     }
+    .textHome button{
+        color: #ffffff;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-top: 1rem;
+        padding: 0.9rem;
+        outline: none;
+        background-color:#0D1B31;
+        border: 1px solid #ffffff;
+        transition: all 0.4s;
+    }
+    .textHome button:hover{
+        background-color:#ffffff1f;
+    }
+    .textHome button a{
+        text-decoration: none;
+        color: #ffffff;
+        
+    }
+}
+
+
+

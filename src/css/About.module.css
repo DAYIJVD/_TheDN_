@@ -1,0 +1,187 @@
+.conteiner{
+    display: flex;
+    height: 100vh;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem 12.6rem; 
+    background: rgb(13,27,49);
+    background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+}
+.content{
+    width: 100%;
+    margin: 0rem 0rem;
+    margin-top:0rem ;
+    position: relative;
+    bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+    opacity: 0;
+    animation: show 2s forwards ;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.content .poster{
+    width: 450px;
+    filter: brightness(0.9);
+    margin-left:10rem;
+    border-radius: 60%;
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    
+}
+.textParagraf{
+    width: 300px;
+ background-color: #ffffff3f;
+ border-radius: 20px;
+ padding: 3rem 4rem;
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.textParagraf p{
+    width: 300px;
+    font-size: small;
+}
+h4 span{
+    color: rgb(0, 110, 255);
+    font-size: larger;
+}
+.code{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 1rem;
+   }
+   .code img{
+       width: 50px;
+
+   }
+   .CoDE{
+     position: absolute;
+     bottom: -13rem;
+     right: -14rem;
+   }
+   .React{
+       position: absolute;
+       bottom: 11rem;
+       right: -10.6rem;
+   }
+   .js{
+     position: absolute;
+     bottom: 5rem;
+     right: -8rem;
+   }
+   .HTML{
+      position:absolute;
+      bottom: -8rem;
+      right: -10rem;
+   }
+   .css{
+      position: absolute;
+      bottom: -1.7rem;
+      right: -8rem;
+   }  
+
+@media (max-width:1140px) {
+    .conteiner{
+        display: flex;
+        min-height: 100vh;
+        color: #ffffff;
+        justify-content: space-between;
+        align-items: center;
+        padding:0rem 12.6rem; 
+        background: rgb(13,27,49);
+        background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+    }
+    .content{
+        width: 100%;
+        margin: 0rem 0rem;
+        margin-top:2rem ;
+        position: relative;
+        bottom: 5rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: large;
+        opacity: 0;
+        animation: show 2s forwards ;
+    }
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .content .poster{
+        width: 250px;
+        filter: brightness(0.9);
+        margin: 0;
+        margin-top:5rem;
+        border-radius: 60%;
+     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        
+    }
+    .textParagraf{
+        font-size: 10px;
+        width:250px;
+     background-color: #ffffff3f;
+     border-radius: 20px;
+     padding: 3rem 4rem;
+     margin-top: 5rem;
+     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    .textParagraf p{
+        width: 300px;
+        font-size: small;
+    }
+    h4 span{
+        color: rgb(0, 110, 255);
+        font-size: larger;
+    }
+    .code{
+     display: flex;
+     position: relative;
+     top: 1rem;
+    }
+    .code img{
+        width: 40px;
+
+    }
+    .CoDE{
+      position: absolute;
+     
+      bottom: 2.9rem;
+        right: -11rem;
+    }
+    .React{
+        position: absolute;
+        bottom: 2.7rem;
+        left: -11.6rem;
+    }
+    .js{
+      position: absolute;
+      bottom: -2rem;
+      left:-8rem;
+    }
+    .HTML{
+       position:absolute;
+       
+       bottom: -1.7rem;
+       right: -8rem;
+    }
+    .css{
+       position: absolute;
+       right: -1rem;
+       bottom: -3rem;
+    }  
+}

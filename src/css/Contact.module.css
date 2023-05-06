@@ -1,0 +1,213 @@
+.conteiner{
+    display: flex;
+    height: 100vh;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem 12.6rem; 
+    background: rgb(13,27,49);
+    background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+}
+.content{
+    width: 100%;
+    margin: 0rem 4rem;
+    margin-top:1rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    opacity: 0;
+    animation: show 2s forwards ;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.poster{
+    width: 450px;
+    filter: brightness(0.6);
+    border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+.content ul{
+    list-style: none;
+}
+.content ul img{
+    width: 60px;
+    position: relative;
+    transition: all 0.4s;
+    bottom: 0;
+}
+.content ul img:hover{
+  bottom: 6px;
+}
+.content ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.content ul li a span{
+    margin-left: 1rem;
+    position: relative;
+   right: 0;
+    transition: all 0.4s;
+}
+
+.content li{
+    padding: 1rem;
+}
+.way{
+    animation: color 2.2s forwards;
+    font-size: larger;
+}
+.telegram span:hover{
+ color: rgb(104, 104, 242);
+ right: 4px;
+
+
+}
+.instagram{
+    position: relative;
+right: 30px;
+}
+.instagram span:hover{
+    color: rgb(232, 33, 179);
+   right: 4px;
+
+   }
+   .github span:hover{
+    color: rgb(103, 12, 109);
+    right: 4px;
+   }
+@keyframes color{
+    0%{
+      color: #ffffff;
+    }
+    50%{
+        color: rgb(28, 28, 96);
+    }
+    100%{
+        color: #ffffff;
+    }
+}
+@media (max-width:850px) {
+    .conteiner{
+        display: flex;
+        height: 100vh;
+        color: #ffffff;
+        padding-top: 2rem;
+        justify-content: center;
+        align-items: flex-start; 
+        background: rgb(13,27,49);
+        background: linear-gradient(90deg, rgba(13,27,49,1) 0%, rgba(3,31,77,1) 13%, rgba(15,74,169,1) 52%, rgba(168,203,255,1) 100%);
+    }
+    .content{
+        width: 100%;
+        margin: 0rem 0rem;
+        margin-top:1rem ;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: large;
+        opacity: 0;
+        animation: show 2s forwards ;
+    }
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .poster{
+        width: 300px;
+        filter: brightness(0.6);
+        border-radius: 50%;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    
+    }
+    .content ul{
+        border: solid 1px rgb(255, 249, 249);
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        margin-top: 2rem;
+        list-style: none;
+        width: 200px;
+        height: 200px;
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.316);
+    }
+    .content ul img{
+        width: 30px;
+        position: relative;
+        transition: all 0.4s;
+        bottom: 0;
+    }
+    .content ul img:hover{
+      bottom: 6px;
+    }
+    .content ul li a{
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+    
+    }
+    .content ul li a span{
+        margin-left: 1rem;
+        position: relative;
+       right: 0;
+        transition: all 0.4s;
+    }
+    
+    .content li{
+        padding: 1rem;
+    }
+    .way{
+        display: none;
+        animation: color 2.2s forwards;
+        font-size: larger;
+    }
+    .telegram span:hover{
+     color: rgb(104, 104, 242);
+     right: 4px;
+    
+    
+    }
+    .instagram{
+        position: relative;
+    right: 28px;
+    }
+    .instagram span:hover{
+        color: rgb(232, 33, 179);
+       right: 4px;
+    
+       }
+       .github span:hover{
+        color: rgb(103, 12, 109);
+        right: 4px;
+       }
+    @keyframes color{
+        0%{
+          color: #ffffff;
+        }
+        50%{
+            color: rgb(28, 28, 96);
+        }
+        100%{
+            color: #ffffff;
+        }
+    }
+}
